@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+.especial {
+    background-color: aquamarine;
+    
+}
+
+.epecial::before {
+    content:'☜';
+
+}
+
+.especial::after {
+    content: '☜';
+}

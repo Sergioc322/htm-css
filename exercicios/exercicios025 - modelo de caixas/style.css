@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    background-color: black;
+}
+
+h1 { 
+    color: bisque;
+    text-align: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+
+}
+
+p {
+    color: red;
+    text-align: justify;
+    height: max-content;
+    width: auto;
+
+}
