@@ -1,13 +1,19 @@
 @charset "utf-8";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-:root{
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-    --cor001:#D92740;
-    --cor002:#D93F27;
-    --cor003:#D927AB;
-    --cor004:#E0822A;
+:root {
+
+    --cor001: #D92740;
+    --cor002: #D93F27;
+    --cor003: #D927AB;
+    --cor004: #E0822A;
 
     --fontepadrao: Arial, Verdana, Helvetica, sans-serif;
     --fontemoderna: 'Titillium Web', sans-serif;
@@ -15,6 +21,92 @@
     --amao: "Great Vibes", cursive;
 }
 
+html,
+body {
+    min-height: 100vh;
+    background-color: black;
+    font-family: var(--fontepadrao);
+}
 
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
 
+header h1 {
+    color: white;
+    font-family: var(--fontemoderna);
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 40px;
+}
 
+header p {
+    font-family: var(--amao);
+    color: var(--cor004);
+    font-size: 1.5em;
+}
+
+header a,
+footer a {
+    color: var(--cor004);
+    text-decoration: none;
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--josefinosans);
+    font-size: 4vw;
+    
+}
+
+section p{
+    padding-bottom: 3em;
+}
+
+section.normal {
+    color: white;
+}
+
+section.comimagem {
+    background-color: var(--cor004);
+    color: white;
+    box-shadow: rgba(44, 44, 82, 0.384) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.comimagem> p {
+    
+    background-color: rgba(0, 0, 0, 0.363);
+    display: inline-block;
+}
+
+section#img01{
+    background-image: url(../imagens/flores-no-campo.jpg);
+    background-position: right center;
+   
+}
+
+section#img02{
+    background-image: url(../imagens/dente-de-leão-prebranco.jpg);
+    background-position: right center;
+    
+}
+
+footer {
+    font-family: var(--fontemoderna);
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
