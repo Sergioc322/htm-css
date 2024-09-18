@@ -104,16 +104,13 @@
          var num = 0;
          var celulas = document.querySelectorAll('.num');
      
-         // Itera sobre as células e soma os valores
          celulas.forEach(function(celula) {
            num += parseFloat(celula.textContent);
          });
      
-         // Exibe a soma na célula "total"
          document.getElementById('total').textContent = num;
        }
      
-       // Chama a função ao carregar a página
        window.onload = somarValores;
      
      </script>
