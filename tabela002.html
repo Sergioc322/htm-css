@@ -20,6 +20,7 @@
             border: 1px solid black;
             padding: 10px;
         }
+
         td.num {
             text-align: right;
 
@@ -32,7 +33,7 @@
 
         }
     </style>
-   
+
 </head>
 
 <body>
@@ -90,6 +91,26 @@
                 <td class="num">8664306</td>
                 <td>4,1%</td>
             </tr>
+            <tr>
+                <td>santa catarina</td>
+                <td class="num">8058447</td>
+                <td>3,75%</td>
+            </tr>
+            <tr>
+                <td>goiás</td>
+                <td class="num">7350483</td>
+                <td>3,47%</td>
+            </tr>
+            <tr>
+                <td>maranhao</td>
+                <td class="num">7010960</td>
+                <td>3,34%</td>
+            </tr>
+            <tr>
+                <td>amazonas</td>
+                <td class="num">4281207</td>
+                <td>1,94%</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
@@ -101,19 +122,19 @@
 
     <script>
         function somarValores() {
-         var num = 0;
-         var celulas = document.querySelectorAll('.num');
-     
-         celulas.forEach(function(celula) {
-           num += parseFloat(celula.textContent);
-         });
-     
-         document.getElementById('total').textContent = num;
-       }
-     
-       window.onload = somarValores;
-     
-     </script>
+            var num = 0;
+            var celulas = document.querySelectorAll('.num');
+
+            celulas.forEach(function (celula) {
+                num += parseFloat(celula.textContent);
+            });
+
+            document.getElementById('total').textContent = num;
+        }
+
+        window.onload = somarValores;
+
+    </script>
 </body>
 
 </html>
