@@ -14,6 +14,10 @@
             width: 600px;
             border-collapse: collapse;
         }
+        thead > tr > th {
+            font-size: 2em;
+            
+        }
 
         td,
         th {
@@ -26,8 +30,20 @@
 
         }
 
-        thead,
-        tfoot {
+        caption {color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            font-weight: bold;
+            padding: 7px;
+            background-color: black
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: gray;
+            color: white;
+        }
+
+        thead,tfoot {
             background-color: rgb(94, 92, 92);
             color: white;
 
@@ -38,11 +54,12 @@
 
 <body>
     <table>
+        <caption>População dos estados</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
-                <th>% da população</th>
+                <th scope="col"> Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 20px;">% da população</th>
             </tr>
         </thead>
         <tbody>
@@ -114,7 +131,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total populacional</th>
+                <th scope="row" >total populacional</th>
                 <td id="total">0000</td>
             </tr>
         </tfoot>
